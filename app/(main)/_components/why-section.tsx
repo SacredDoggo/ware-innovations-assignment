@@ -3,7 +3,7 @@ import Image from "next/image";
 export const WhySection = () => {
     return (
         <div className="flex flex-col items-center w-full gap-y-10 lg:px-32">
-            <h2 className="text-[22px] w-full text-center sm:text-start font-bold">Why choose Ware for your restaurant?</h2>
+            <h2 className="text-[22px] w-full text-center font-bold">Why choose Ware for your restaurant?</h2>
             <div className="flex flex-col sm:flex-row p-2 w-full">
             <div className="w-full p-4 sm:p-0 sm:w-[50%] flex sm:hidden items-center justify-center">
                     <Image 

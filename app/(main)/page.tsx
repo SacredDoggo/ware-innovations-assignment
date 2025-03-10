@@ -36,7 +36,7 @@ const HomePage = () => {
   }
 
   return (
-    <div className="w-full md:w-[80%] flex flex-col gap-y-10 relative">
+    <div className="w-full md:w-[80%] flex flex-col gap-y-14 relative">
       <div className="w-full flex flex-col">
         <OfferHeader />
         <Header />
