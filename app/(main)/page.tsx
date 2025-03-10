@@ -13,9 +13,13 @@ import { OfferHeader } from "./_components/offer-header";
 import { Uunatii } from "./_components/uunatii";
 import { WhySection } from "./_components/why-section";
 import { Reviews } from "./_components/review-components/reviews";
+import { useScrollTop } from "@/hooks/use-scroll-top";
+import { CircleChevronUpIcon } from "lucide-react";
 
 const HomePage = () => {
   const contactRef = useRef<HTMLDivElement | null>(null);
+
+  const scrolled = useScrollTop();
 
   const scrollToContact = () => {
     if (contactRef.current) window.scrollTo({
@@ -23,6 +27,14 @@ const HomePage = () => {
       behavior: "smooth"
     })
   }
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    })
+  }
+
   return (
     <div className="w-full md:w-[80%] flex flex-col gap-y-10 relative">
       <div className="w-full flex flex-col">
@@ -38,6 +50,7 @@ const HomePage = () => {
       <CatalougeRequest />
       <div ref={contactRef} className="w-full"><ContactUs /></div>
       <Footer />
+      {scrolled && <CircleChevronUpIcon onClick={scrollToTop} className="cursor-pointer text-primary h-10 w-10 fixed right-5 bottom-5" />}
     </div >
   );
 };

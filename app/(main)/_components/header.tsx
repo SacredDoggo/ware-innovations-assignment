@@ -8,7 +8,7 @@ export const Header = () => {
     const scrolled = useScrollTop();
 
     return (
-        <header className={`py-2 px-4 flex items-center w-full md:w-[80%] fixed bg-white z-50 ${scrolled ? "top-0" : "top-7"}`}>
+        <header className={`py-2 px-4 flex items-center w-full md:w-[80%] fixed bg-white z-50 transition ${scrolled ? "top-0" : "top-7"}`}>
             <div className="w-[33.33%] flex justify-start">
                 <MenuIcon className="h-6 w-6 cursor-pointer" />
             </div>
