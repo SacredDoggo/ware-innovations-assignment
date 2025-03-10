@@ -29,7 +29,7 @@ const reviews_static: { rating: number, message: string, name: string, designati
         restaurant: "abc restaurant"
     },
     {
-        rating: 5,
+        rating: 1,
         message: "I am just a hater",
         name: "papeeta Singh",
         designation: "Owner",
